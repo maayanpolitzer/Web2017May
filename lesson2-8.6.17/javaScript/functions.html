@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script>
+		
+			/*
+			if(8 == moshe(7,6)){
+				console.log("yey...");
+			}
+			*/
+			console.log(distance(4,9));
+			console.log(product(3,2));
+			
+			function product(x,y){
+				return x * y;
+			}
+		
+			function moshe(x, y){
+				var result = x + y;
+				return result;
+			}
+			
+			function distance(x,y){
+				var large = x;
+				var small = y;
+				if(small > large){
+					large = y;
+					small = x;
+				}
+				var counter = 0;
+				while(small + counter < large){
+					counter++;
+				}
+				return counter;
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+	
+	
+	
+	
+	</body>
+</html>
