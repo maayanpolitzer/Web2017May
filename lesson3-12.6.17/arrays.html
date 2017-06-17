@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<script>
+			var b = [90, 101, 70, 65];
+			
+			//console.log(b.length);
+			//console.log(b[1]);
+			//b[1] = 95;
+			//console.log(b);
+			
+			//console.log(distance());
+			timesInArray(80);
+			
+			function balance(){
+			
+			}
+			
+			function firstAndLastSum(){
+			
+			}
+			
+			function sumOfOdds(){
+			
+			}
+			
+			function firstAndSecondSum(){
+				
+			}
+			
+			function timesInArray(number){
+				
+			}
+			
+			function average(){
+				var sum = b[0];
+				for(var i = 1; i < b.length; i++){
+					sum += b[i];
+				}
+				return sum / b.length;
+			}
+			
+			function distance(){
+				var maxSoFar = b[0];
+				var minSoFar = b[0];
+				for(var i = 1; i < b.length; i++){
+					if(b[i] > maxSoFar){
+						maxSoFar = b[i];
+						continue;
+					}
+					if(b[i] < minSoFar){
+						minSoFar = b[i];
+					}
+				}
+				return maxSoFar - minSoFar;
+			}
+			
+			function min(){
+				var minSoFar = b[0];
+				for(var i = 1; i < b.length; i++){
+					if(b[i] < minSoFar){
+						minSoFar = b[i];
+					}
+				}
+				return minSoFar;
+			}
+			
+			function max(){
+				var maxSoFar = b[0];
+				for(var i = 1; i < b.length; i++){
+					if(b[i] > maxSoFar){
+						maxSoFar = b[i];
+					}
+				}
+				return maxSoFar;
+			}
+			
+			function print(){
+				for(var i = 0; i < b.length; i++){
+					console.log(b[i]);
+				}
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<script>
+			function distance(x,y){
+				var small = x;
+				var large = y;
+				if(small > large){
+					small = y;
+					large = x;
+				}
+				var result = 0;
+				while(small + result < large){
+					result++;
+				}
+				return result;
+			}
+		
+			function product(x,y){
+				var small = x;
+				var large = y;
+				if(small > large){
+					small = y;
+					large = x;
+				}
+				var result = 0;
+				for(var i = 0; i < small; i++){
+					result += large;
+				}
+				return result;
+			}
+		
+			function quotient(x,y){
+				var counter = 0;
+				var helper = y;
+				while(helper <= x){
+					counter++;
+					helper += y;
+				}
+				return counter;
+			}
+			
+			function remainder(x,y){
+				return distance(x,product(quotient(x,y),y));
+			}
+			
+			console.log(remainder(11,3));
+		
+		</script>
+	</head>
+	<body>
+	
+	
+	
+	
+	</body>
+</html>

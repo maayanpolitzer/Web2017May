@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<script>
+			/*
+			var arr = [10,20,50,70,400];
+			var number = 60;
+			
+			
+			console.log(isSum(arr, number));
+			
+			function isSum(arr,number){
+				for(var i = 0; i < arr.length; i++){
+					for(var j = 0; j < arr.length; j++){
+						if(arr[i] + arr[j] == number){
+							return true;
+						}
+					}
+				}
+				return false;
+			}
+			*/
+			
+			var arr = [false, false, true, true, false, false, true, false];
+			var number = 3;
+			
+			console.log(x(arr,number));
+			
+			function x(arr,number){
+				var counter = 0;
+				for(var i = 0; i < arr.length - number + 1; i++){
+					if(arr[i] == false){
+						for(var j = i + 1; j < number + i; j++){
+							if(arr[j] == false){
+								counter++;
+							}
+						}
+						if(counter == number - 1){
+							return true;
+						}else{
+							counter = 0;
+						}
+					}
+				}
+				return false;
+			}
+			
+		
+		
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

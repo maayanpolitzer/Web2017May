@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script>
+			/*
+			var i = 5;
+			var b = true;
+			var s = "Maayan Politzer";
+			var arr = ["Maayan", 31, "+1"];
+			//var arr = new Array();
+			*/
+
+			
+			var user1 = new Object();
+			user1.name = "Maayan Politzer";
+			user1.age = 31;
+			user1.status = "+1";
+			user1.address = "Nahal alexander 4";
+			user1.shemHaKalba = "Bree";
+			user1.all = getUserData;
+			
+			
+			var user2 = {
+				name:"Yagel Moshe", 
+				age:33, 
+				status:"0", 
+				address:"Tel aviv", 
+				shemHaKalba: "Lasi",
+				all: getUserData
+			};
+			
+			function getUserData(){
+				return this.name + ", " + this.address;
+			}
+			
+			console.log(user1.all());
+			console.log(user2.all());
+			
+			// for advance oo js learn about PROTOTYPE.
+			
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
