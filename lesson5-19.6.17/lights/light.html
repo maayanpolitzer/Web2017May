@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script>
+			var on = false;
+			var lamp;
+			
+			function init(){
+				lamp = document.getElementById("lamp");
+			}
+		
+			function change(){
+				/*
+				if(on == false){
+					lamp.src = "on.jpg";
+					on = true;
+				}else{
+					lamp.src = "off.jpg";
+					on = false;
+				}
+				*/
+				
+				//on == false ? lamp.src = "on.jpg" : lamp.src = "off.jpg";
+				
+				//lamp.src = on == false ? "on.jpg" : "off.jpg";
+				
+				lamp.src = !on ? "on.jpg" : "off.jpg";
+				on = !on;
+			}
+		
+		</script>
+	
+		<style>
+			img {
+				width: 200px;
+				height: 400px;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<img id="lamp" src="off.jpg"/>
+		<button onclick="change()">change</button>
+	</body>
+</html>

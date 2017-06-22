@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<style>
+			body {
+				background-color: #444444;
+			}
+		
+			canvas {
+				width: 400px;
+				height: 400px;
+				border: 2px solid black;
+				border-radius: 10px;
+				background-color: #ffffff;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			li {
+				width: 100px;
+				height: 100px;
+				border: 5px solid black;
+				display: inline-block;
+				border-radius: 50%;
+				margin: 8px;
+			}
+			
+			.irena {
+				margin-bottom: 20px;
+			}
+			
+			table {
+				border-radius: 10px;
+				padding: 10px;
+				border: 1px solid black;
+				text-align: center;
+				display: none;
+			}
+			
+			.preview {
+				height: 100px;
+				width: 70px;
+				border: 1px solid black;
+			}
+			
+			.saveBtn {
+				width: 100%;
+			}
+			
+			.selected {
+				border: 5px solid white;
+			}
+		</style>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script>
+			var color;
+		
+			$(document).ready(function(){		// onload - function that will be called after page load
+				$(".irena").click(function(){	// call a function when clicking irena class.
+					$("table").slideToggle();	// make the table fade out & fade in.
+				});
+				
+				$(".saveBtn").click(function(){ // call a function when clicking saveBtn class.
+					var li = $("<li></li>");	// create a <li></li> tag.
+					li.css("background-color", color);	// change the background color to the chosen from the table.
+					$("#list").append(li);		// add the li tag to the list.
+				});
+				
+				$("input[type=range]").on("input", function(){			// call a function when changing the input value.
+					var red = $("#red").val();
+					var green = $("#green").val();
+					var blue = $("#blue").val();
+					color = "rgb(" + red + "," + green + "," + blue + ")";
+					$(".preview").css("background-color", color);		// change the background-color to the preview class.
+				});
+				
+				$("#list").on("click", "li", function(){
+					$(this).siblings().removeClass("selected");
+					$(this).addClass("selected");
+				});
+				
+				
+			});
+		
+		</script>
+	</head>
+	<body>
+		<div>
+			<!-- comment start...
+			<canvas style="width:400px;height:400px;border:1px solid black">
+			comment end  -->
+			<canvas>
+				Your browser doesn't support HTML 5 tags...
+			</canvas>
+			<ul id="list">
+				<li class="selected" style="background-color:red"></li>
+				<li style="background-color:green"></li>
+				<li style="background-color:blue"></li>
+			</ul>
+			<button class="irena">add new color</button>
+			
+			<table>
+				<tr>
+					<td rowspan="3">
+						<div class="preview"></div>
+					</td>
+					<td>Red</td>
+					<td><input id="red" type="range" min="0" max="255"/></td>
+				</tr>
+				<tr>
+					<td>Green</td>
+					<td><input id="green" type="range" min="0" max="255"/></td>
+				</tr>
+				<tr>
+					<td>Blue</td>
+					<td><input id="blue" type="range" min="0" max="255"/></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button class="saveBtn">Save color</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
