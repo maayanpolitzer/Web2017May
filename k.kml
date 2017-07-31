@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="tel_hasomer" id="tel_hasomer">
+	<SimpleField name="objid" type="int"></SimpleField>
+	<SimpleField name="userid" type="int"></SimpleField>
+	<SimpleField name="municipalname" type="string"></SimpleField>
+	<SimpleField name="municipaltype" type="string"></SimpleField>
+	<SimpleField name="municipalcode" type="string"></SimpleField>
+	<SimpleField name="area" type="float"></SimpleField>
+	<SimpleField name="perimeter" type="float"></SimpleField>
+	<SimpleField name="naturalarea" type="string"></SimpleField>
+	<SimpleField name="naturalareacode" type="string"></SimpleField>
+	<SimpleField name="authorityname" type="string"></SimpleField>
+	<SimpleField name="authoritycode" type="string"></SimpleField>
+</Schema>
+<Folder><name>tel_hasomer</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#tel_hasomer">
+		<SimpleData name="objid">1483</SimpleData>
+		<SimpleData name="userid">2013</SimpleData>
+		<SimpleData name="municipalname">חסר מעמד</SimpleData>
+		<SimpleData name="municipaltype">TYPE_9</SimpleData>
+		<SimpleData name="municipalcode">1908</SimpleData>
+		<SimpleData name="area">2102893.51</SimpleData>
+		<SimpleData name="perimeter">7791.84</SimpleData>
+		<SimpleData name="naturalarea">אזור רמת גן</SimpleData>
+		<SimpleData name="naturalareacode">512</SimpleData>
+		<SimpleData name="authorityname">חסר מעמד</SimpleData>
+		<SimpleData name="authoritycode">1908</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><altitudeMode>relativeToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>relativeToGround</altitudeMode><coordinates>34.843996,32.042119 34.844247,32.042994 34.84484,32.043368 34.844964,32.043406 34.846662,32.043101 34.847177,32.043968 34.848356,32.045955 34.850247,32.045585 34.850301,32.045642 34.850308,32.045813 34.850376,32.046293 34.850385,32.046457 34.850162,32.048167 34.850933,32.04843 34.850809,32.049135 34.850723,32.04921 34.850212,32.049846 34.850092,32.049998 34.850213,32.050004 34.850597,32.050389 34.850935,32.050666 34.851136,32.050831 34.851685,32.051234 34.851946,32.051381 34.852026,32.051438 34.852135,32.051441 34.852488,32.051511 34.852562,32.051528 34.853121,32.051653 34.853403,32.051757 34.853515,32.051807 34.853611,32.051702 34.853809,32.051439 34.853927,32.051239 34.854145,32.050992 34.854167,32.050964 34.854481,32.050557 34.854743,32.050283 34.854877,32.050168 34.854908,32.050128 34.855481,32.049476 34.855627,32.049025 34.855635,32.04881 34.855912,32.048568 34.856264,32.048426 34.856392,32.04787 34.856484,32.047499 34.856673,32.047358 34.860428,32.046828 34.861526,32.046936 34.862397,32.046798 34.864549,32.046638 34.865329,32.04658 34.866344,32.039756 34.865419,32.03967 34.863775,32.038617 34.862751,32.037998 34.862378,32.037772 34.862165,32.03766 34.862039,32.038767 34.862028,32.039229 34.861952,32.039457 34.861751,32.039915 34.860689,32.040082 34.859273,32.040284 34.859265,32.040246 34.85926,32.040221 34.859184,32.03968 34.859148,32.039685 34.858458,32.039718 34.858084,32.039712 34.857771,32.039738 34.857628,32.039749 34.857308,32.039743 34.856679,32.039733 34.856132,32.039722 34.85574,32.039762 34.855523,32.039782 34.855277,32.039807 34.854766,32.03587 34.854576,32.034884 34.853928,32.035018 34.852274,32.035338 34.851578,32.035433 34.850166,32.035617 34.848453,32.035829 34.848058,32.035879 34.847429,32.03598 34.847228,32.036008 34.846385,32.036131 34.845632,32.036242 34.845756,32.036479 34.845901,32.038146 34.845486,32.038229 34.845627,32.03874 34.845946,32.038747 34.845947,32.039531 34.844662,32.039731 34.845321,32.040762 34.84568,32.041693 34.843996,32.042119</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>
